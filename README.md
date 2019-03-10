@@ -1,2 +1,2 @@
 # dashservertest
-Testing a dash server
+Testing a dash server with nginx
