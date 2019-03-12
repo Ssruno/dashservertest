@@ -1,0 +1,65 @@
+Unable to find image 'majamee/alpine-dash-hls:latest' locally
+latest: Pulling from majamee/alpine-dash-hls
+6c40cc604d8e: Already exists 
+c9a2c7ccbf69: Pull complete 
+1650bd772f0b: Pull complete 
+1db479ca6fe3: Pull complete 
+c6aef107233e: Pull complete 
+b9a22fb6636c: Pull complete 
+Digest: sha256:3d852961e3898796a2deb60d08fafc73c4d3a6ba11e7538ab614cafab3f85f39
+Status: Downloaded newer image for majamee/alpine-dash-hls:latest
+
+Current video: sony4kvideo.mkv
+Detected file name: sony4kvideo
+Total # of frames: N/A
+
+Creating video preview thumbnails (1/7 seconds)
+thumbnail02.png: No Exif data found in the file
+thumbnail02.png: No Exif data found in the file
+Thumbnail Dimensions: 213 x 120
+Thumbnail count: 28
+
+Creating Video Poster (from second 3)
+
+Creating MPEG-DASH files
+Total # of frames: N/A
+
+Creating Full HD version (no upscaling, Step 1/4)
+frame= 4585 fps= 16 q=-1.0 Lsize=  127524kB time=00:03:11.10 bitrate=5466.4kbits/s speed=0.676x    
+Creating HD version (no upscaling, Step 2/4)
+frame= 4585 fps= 29 q=-1.0 Lsize=   67276kB time=00:03:11.10 bitrate=2883.8kbits/s speed=1.19x    
+Creating DVD quality version (no upscaling, Step 3/4)
+frame= 4585 fps= 47 q=-1.0 Lsize=   26656kB time=00:03:11.10 bitrate=1142.6kbits/s speed=1.95x    
+Creating audio only version (Step 4/4)
+size=    3009kB time=00:03:11.25 bitrate= 128.9kbits/s speed=  58x    
+
+Creating MPEG-DASH files & MPD-playlist
+[DASH] Files have non-proportional track layouts (1920x1080 vs 718x404) but sample size and aspect ratio match, assuming precision issue
+DASH-ing files - single segment
+Subsegment duration 2.000 - Fragment duration: 2.000 secs
+Spliting segments and fragments at GOP boundaries
+DASHing file output/sony4kvideo/intermed_1080p.mp4
+DASHing file output/sony4kvideo/intermed_720p.mp4           
+DASHing file output/sony4kvideo/intermed_480p.mp4           
+DASHing file output/sony4kvideo/audio_128k.m4a              
+[DASH] Generating MPD at time 2019-03-12T20:40:53.803Z      
+
+Creating HLS files (needed for Safari on iOS, Safari on Mac is already compatible with MPEG-DASH files)
+Total # of frames: N/A
+
+Creating Full HD version (no upscaling, Step 1/4)
+frame= 4585 fps=0.0 q=-1.0 Lsize=N/A time=00:03:11.12 bitrate=N/A speed= 448x    
+Creating HD version (no upscaling, Step 2/4)
+frame= 4585 fps=0.0 q=-1.0 Lsize=N/A time=00:03:11.12 bitrate=N/A speed= 704x    
+Creating DVD quality version (no upscaling, Step 3/4)
+frame= 4585 fps=0.0 q=-1.0 Lsize=N/A time=00:03:11.12 bitrate=N/A speed= 863x    
+Creating audio only version (Step 4/4)
+size=N/A time=00:03:11.23 bitrate=N/A speed=2.57e+03x    
+
+Creating master M3U8-playlist for HLS
+
+Cleanup of intermediary files
+
+Add HTML files for playback to output folder
+
+Setting permissions for all created files and folders & finishing
