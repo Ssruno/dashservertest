@@ -1,0 +1,18 @@
+version: "3"
+services:
+  dashserver:
+    # build: ./nginx_dash
+    image: nginx
+    ports:
+      - 8080:80
+    volumes: 
+      - ./video/output/sony4kvideo/:/usr/share/nginx/html
+      - ./nginx_dash/mime.types:/etc/nginx/mime.types
+      - ./nginx_dash/default.conf:/etc/nginx/conf.d/default.conf
+  dashclient:
+    build: ./nginx_client
+    ports:
+      - 3000:80
+    # volumes: 
+      # - ./testvideo/:/usr/share/nginx/html
+    # command: npm run dev
