@@ -22,16 +22,14 @@ Then we run:
 
 Our generated DASH video is in our "server" here: http://localhost:8080/playlist.mpd
 
-On our "client" we need to run grunt:
-
-	docker exec -it dashservertest_dashclient_1 /bin/sh
-	cd dash.js
-	npm run dev
-
-To test it, we need to access to this URL: http://localhost:3000/dash.js/samples/dash-if-reference-player/ and put there the URL of the above video.
+To test it, we need to access to this URL: http://localhost:3000/dash.js/samples/dash-if-reference-player/ and put there the URL of the above video. We can also use the default video provided by dash.js
 
 
-Reference: https://github.com/Dash-Industry-Forum/dash.js/
+Reference: 
+- https://github.com/Dash-Industry-Forum/dash.js/
+- https://hub.docker.com/r/majamee/alpine-dash-hls
+- https://isrv.pw/html5-live-streaming-with-mpeg-dash
+- https://github.com/arut/nginx-rtmp-module
 
 Useful commands to clean everything:
 
